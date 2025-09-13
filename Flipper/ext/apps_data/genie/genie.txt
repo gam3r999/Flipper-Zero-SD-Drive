@@ -1,0 +1,4 @@
+Filetype: Genie settings file
+Version: 1
+frequency: 315000000
+path: 

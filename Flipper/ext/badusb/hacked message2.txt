@@ -1,0 +1,4 @@
+GUI r
+DELAY 500
+STRING powershell -NoP -NonI -ExecutionPolicy Bypass -Command "Add-Type -AssemblyName PresentationFramework; $sp='C:\Users\mormi.GAMINGPC12\Downloads\alarm.wav'; if(Test-Path $sp){$s=New-Object Media.SoundPlayer $sp; $s.PlayLooping()}; do{$r=[System.Windows.MessageBox]::Show('YOU HAVE HACKED — CLICK OK TO STOP THIS','Alert','OKCancel')}while($r -eq 'OK'); $s.Stop()"
+ENTER

@@ -1,0 +1,12 @@
+Filetype: Flipper BadUSB Settings File
+Version: 1
+layout: /ext/badusb/assets/layouts/en-US.kl
+interface: 1
+ble_bonding: true
+ble_pairing: 2
+ble_name: Connect_to_this
+ble_mac: 00 00 00 00 00 00
+usb_manuf: 
+usb_product: Connect_to_this
+usb_vid: 0
+usb_pid: 0

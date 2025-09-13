@@ -1,0 +1,16 @@
+REM Author: gam3r999
+REM Description: Open any website on an iPhone via keyboard input
+REM Version: 1.1
+REM Category: iPhone
+
+DELAY 2000
+REM Activate Siri (works if Siri is enabled on keyboard input)
+GUI ESC
+DELAY 1000
+STRING "Open Safari"
+DELAY 500
+ENTER
+DELAY 2000
+STRING "www.youtube.com/watch?v=lt8XZOPdIe8"
+DELAY 500
+ENTER

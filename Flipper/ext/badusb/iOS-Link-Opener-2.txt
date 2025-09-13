@@ -1,0 +1,6 @@
+REM Made By Kushed3d
+DELAY 1000
+GUI SPACE
+DELAY 1500
+STRING pikarocks.dev/fun/annoying/
+RETURN

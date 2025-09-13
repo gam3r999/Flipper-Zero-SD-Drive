@@ -1,0 +1,34 @@
+REM Title: Open Prank Website Fullscreen + Close Other Apps
+REM Description: Opens your prank URL fullscreen and closes other windows
+REM Target: Windows 10 / 11
+
+DEFAULT_DELAY 100
+
+REM Close other apps by sending Alt+F4 3 times
+DELAY 500
+ALT F4
+DELAY 500
+ALT F4
+DELAY 500
+ALT F4
+DELAY 1000
+
+REM Open Run dialog
+GUI r
+DELAY 500
+
+REM Open prank URL
+STRING https://darkloyd256.github.io/Ooh-nice-computer-you-got-here-Can-i-have-it/
+ENTER
+DELAY 5000
+
+REM Maximize window (Alt+Space, then x)
+ALT SPACE
+DELAY 500
+STRING x
+ENTER
+DELAY 500
+
+REM Send F11 to go fullscreen
+STRING {F11}
+ENTER

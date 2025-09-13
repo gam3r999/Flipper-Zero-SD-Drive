@@ -1,0 +1,12 @@
+Filetype: Blackjack config file
+Version: 1
+# Card animation duration in ms
+AnimationDuration: 800
+# Popup message duration in ms
+MessageDuration: 1500
+# Player's starting money
+StartingMoney: 200
+# Round price
+RoundPrice: 10
+# Enable sound effects
+SoundEffects: true
