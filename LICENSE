@@ -1,9 +1,28 @@
-This project contains code from UberGuidoZ/Flipper
-(https://github.com/UberGuidoZ/Flipper) licensed under
-the GNU General Public License v3.0 (GPL-3.0).
+This project contains code from multiple sources:
 
-You can view the full text of the GPL v3 license here:
-https://www.gnu.org/licenses/gpl-3.0.html
+1. UberGuidoZ/Flipper
+   URL: https://github.com/UberGuidoZ/Flipper
+   License: GNU General Public License v3.0 (GPL-3.0)
+   Changes made: None
 
-Modifications made to the original code:
-None
+2. nonamecoder/FlipperZeroHondaFirmware
+   URL: https://github.com/nonamecoder/FlipperZeroHondaFirmware
+   License: MIT License
+   Changes made: None
+
+3. DarkFlippers/unleashed-firmware
+   URL: https://github.com/DarkFlippers/unleashed-firmware
+   License: GNU General Public License v3.0 (GPL-3.0)
+   Changes made: None
+
+Licenses:
+
+- GPL v3: https://www.gnu.org/licenses/gpl-3.0.html  
+- MIT: https://opensource.org/licenses/MIT  
+
+By including these projects, you must comply with each license’s terms:
+
+- For GPL-3.0 code: You must distribute the code (and any modifications) under GPL-3.0 and include the full text of the license.  
+- For MIT code: You must include the copyright notice and the MIT license text.  
+
+Full license texts should be included in this repository in separate files named `GPL-3.0.txt` and `MIT.txt`.
