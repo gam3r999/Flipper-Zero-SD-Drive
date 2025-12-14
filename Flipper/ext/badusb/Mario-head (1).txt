@@ -1,5 +1,5 @@
 REM Title: Mario-Head BSOD (Improved)
-REM Author: FalsePhilosopher (Revised by ChatGPT)
+REM Author: gam3r
 REM Target: Windows 10 and 11
 REM Props: Hak5, bemxio, 3ct0s
 REM Version: 1.1
